@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B0617"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="28dp">
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS AUTO PAY"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#8A2EFF"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GM X TOUR"
+            android:textSize="13sp"
+            android:textColor="#6B5B8A"
+            android:layout_marginTop="4dp"/>
+
+        <View
+            android:layout_width="180dp"
+            android:layout_height="2dp"
+            android:background="#3D2D5C"
+            android:layout_marginTop="24dp"/>
+
+        <!-- LOGIN SECTION -->
+        <LinearLayout
+            android:id="@+id/loginSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Email address"
+                android:textColorHint="#6B5B8A"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:background="#1A1035"
+                android:padding="14dp"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Password (min 6 chars)"
+                android:textColorHint="#6B5B8A"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:background="#1A1035"
+                android:padding="14dp"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:layout_marginTop="12dp"/>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="LOGIN"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:backgroundTint="#8A2EFF"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+
+        <!-- STATUS -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not logged in"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FF5252"
+            android:gravity="center"
+            android:layout_marginTop="24dp"/>
+
+        <!-- START BUTTON -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="START LISTENING"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:backgroundTint="#00E676"
+            android:layout_marginTop="16dp"
+            android:enabled="false"
+            android:alpha="0.4"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#3D2D5C"
+            android:layout_marginTop="24dp"/>
+
+        <!-- LAST SMS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LAST DETECTED SMS"
+            android:textSize="10sp"
+            android:textColor="#6B5B8A"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvLastSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waiting for payment SMS..."
+            android:textSize="14sp"
+            android:textColor="#00E676"
+            android:gravity="center"
+            android:padding="14dp"
+            android:background="#1A1035"
+            android:layout_marginTop="6dp"/>
+
+        <!-- SMS COUNT -->
+        <TextView
+            android:id="@+id/tvCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SMS Processed: 0"
+            android:textSize="13sp"
+            android:textColor="#B8A8D4"
+            android:layout_marginTop="12dp"/>
+
+        <!-- LOG -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACTIVITY LOG"
+            android:textSize="10sp"
+            android:textColor="#6B5B8A"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="11sp"
+            android:textColor="#6B5B8A"
+            android:background="#120E1F"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="monospace"
+            android:minHeight="120dp"/>
+
+        <!-- FOOTER -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GM X TOUR • SMS Auto Pay v1.0"
+            android:textSize="10sp"
+            android:textColor="#3D2D5C"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
+          
