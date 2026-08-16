@@ -1,0 +1,28 @@
+{
+  "project_info": {
+    "project_number": "1066801949106",
+    "project_id": "gm-tour-8ea7e",
+    "storage_bucket": "gm-tour-8ea7e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066801949106:android:abcdef123456",
+        "android_client_info": {
+          "package_name": "com.gmtour.smsreader"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVKTi0E7ZpFYLOsNjZJGQm8ylJumdSrA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
